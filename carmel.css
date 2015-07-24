@@ -1,0 +1,55 @@
+/*.jumbotronh1{
+padding-top:50px;
+font: Verdana;
+background:#FF6699; 
+font-size: 40;
+text-align: center;
+padding-bottom: 20px;
+height: 350px;
+}
+
+
+.jumbotronh1:hover{
+
+
+/*
+background:#FF66FF;
+
+*/
+
+
+} */
+
+
+h1{
+text-align: center;
+}
+
+
+.desc{
+font-size:100;
+}
+
+nav navbar-nav{
+
+text-align:center;
+}
+
+h2{
+    margin: 0;     
+    color: #FF0000;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+.item{
+    background-image: "n.png";    
+    text-align: center;
+    height: 300px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+.bs-example{
+	margin: 20px;
+}
