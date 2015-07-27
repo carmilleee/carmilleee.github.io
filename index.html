@@ -29,6 +29,7 @@
 <!-- Closetty -->
 <div>
     <ul class="nav nav-tabs" ul class="list-unstyled" id="repoTabs">
+    	<li><a href="#nav nav-tabs" class="color-me"><span class="glyphicon glyphicon-list-alt"></span></a></li>
   		<li><a href="#RepoMain" data-toggle="tab">Carmille</a></li>
 		<li><a href="#repoMyCloset" data-toggle="tab">My Closet</a></li>
      	<li><a href="#repoOutfits" data-toggle="tab">Outfits</a></li>
@@ -145,7 +146,6 @@
     </div>
   </div>
 </div>
-
 <div class="row">
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
@@ -164,35 +164,91 @@
   </div>
   </div>
   </div>
+    <!------------  M Y C L OS E T  T A B-------->
        
-    <div class="tab-pane" id="repoMyCloset"> My Closet content</div>
-    <div class="tab-pane" id="repoOutfits"> <p>
-   
+     <div class="tab-pane" id="repoMyCloset"> 
+ <div class="container">
+ <br>
+ <br>
+    
+
+  <div class="row">
+  <div class="col-md-2">
+    <!--<p><button type="button" class="btn btn-default btn-block" a href="#myTops" data-toggle="tab">My Tops</button></p>
+    <p><button type="button" class="btn btn-default btn-block">My Bottoms</button></p>
+    <p><button type="button" class="btn btn-default btn-block">My Shoes</button></p>-->
+     <div class="list-group">
+  <a href="#myCloset" data-toggle="tab" class="list-group-item active">
+    <h4 class="list-group-item-heading"><center>My Closet</center></h4>
+  </a>
+  <a href="#myTops" data-toggle="tab" class="list-group-item">
+    <h4 class="list-group-item-heading"><center>Tops</center></h4>
+    <p class="list-group-item-text"><font size="1">T-shirts,Blouses,Tanks, Crop Tops, etc...</font></p>
+  </a>
+  <a href="#myBottoms" data-toggle="tab" class="list-group-item">
+    <h4 class="list-group-item-heading"><center>Bottoms</center></h4>
+    <p class="list-group-item-text"><font size="1">Pants,Jeans,Skirts, Shorts, etc...</font></p>
+  </a>
+  <a href="#myShoes" data-toggle="tab" class="list-group-item">
+    <h4 class="list-group-item-heading"><center>Shoes</center></h4>
+    <p class="list-group-item-text"><font size="1">Sneakers,Flats, Sandals, Heels, etc...</font></p>
+  </a>
+      </div>
+
+  </div>
+  <div clas="tab-content">
+  <div class="tab-pane fade col-md-6" id="myCloset">This is your closet!</div>
+  <div class="tab-pane fade col-md-6" id="myTops">Your Tops live here!</div>
+  <div class="tab-pane fade col-md-6" id="myBottoms">Your Bottoms live here!</div>
+  <div class="tab-pane fade col-md-6" id="myShoes">Your shoes live here!</div>
+  </div>
+  </div>
+  </div>
+    
+    
+    </div>
+    
+    
+    
+    <!------------ O U  T F I  T S   T A B ------------>
+    <div class="tab-pane fade" id="repoOutfits"> 
+<div class="container">
+<center>
+<br>
+<p><font face="Arial" size="10">Need an Outfit Quick? No Problem!</font></p>
+<p>Click on the button below to generate a random outfit!</p>
+<div class="col-md-4">
 <form name="imageForm">
    
-  <table border=0>
+  
   <tr>
     <td>
-      <input onclick="getRandomImage()" type=button  class="btn btn-primary btn-lg" value="Randomize">
+      <input onclick="getRandomImage()" type=button class="btn btn-primary btn-lg" value="Randomize">
+
+     
       
       <br>
+
     </td>
   </tr>
+  </div>
+  <div class="col-md-4">
   <tr>
     <td>
       <p><img src="" name="topss" width="200px" height="200px"/></p>
 
       <p><img src="" name="bottomss" width="200px" height="200px"/></p>
       <p><img src="" name="shoess" width="200px" height="200px"/></p>
-      
+      </div>
     </td>
   </tr>
-  </table>
+  
 </form>
-
-
-    </div>
-    <div class="tab-pane" id="repoInspiration"> OOTD  
+ </div>
+ </div>
+ </center>
+   <!-------------- O O  T D T A B --------------------->
+    <div class="tab-pane fade" id="repoInspiration"> OOTD  
     <iframe src="http://snapwidget.com/in/?u=b290ZGZhc2h8aW58MTAwfDV8MTJ8fHllc3wxMHxmYWRlSW58b25TdGFydHx5ZXN8eWVz&ve=240715" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
     
     <!--<br> <img id="theImg"  src="1.png" /> <img id="theImg"  src="2.png" /> </div>-->
@@ -223,7 +279,6 @@
               <input type="text"required autocomplete="off"/>
             </div>
           </div>
-
           <div class="field-wrap">
             <label>
               Email Address<span class="req">*</span>
@@ -242,7 +297,6 @@
           
           
           </form>
-
         </div> -->
         
         
@@ -256,25 +310,20 @@
 </nav>
 </body>
 <script type="text/javascript">
-
 var tops = new Array("pics/a.png","pics/b.png","pics/d.png","pics/g.png","pics/e.png","pics/f.png");
 var bottoms = new Array("pics/c.png","pics/i.png","pics/j.png");
 var shoes = new Array("pics/n.png","pics/m.png","pics/h.png");
-
 /*function displayImage(){
     var num = Math.floor(Math.random() * (imagesArray.length+1));  // 0...6
     document.canvas.src ='http://placehold.it/150x150/cf5&text=' + imagesArray[num];
 };*/
-
 /*function getRandomImage() { 
 var randNum = Math.floor(Math.random()*imagesArray.length);
 document.getElementById("myPicture") src = imagesArray[randomNum];
 };*/
-
 function getRandomImage(){
 topss.src=tops[Math.floor(Math.random() * tops.length)];
 bottomss.src=bottoms[Math.floor(Math.random() * bottoms.length)]; 
 shoess.src=shoes[Math.floor(Math.random() * shoes.length)]; };
-
 </script>
 </html>
